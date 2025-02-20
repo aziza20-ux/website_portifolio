@@ -1,3 +1,4 @@
+//the loader for DOMs
 document.addEventListener("DOMContentLoaded", function(){
     document.querySelector(".expand_me").addEventListener("click", () => {
         const more_details = document.querySelector(".extended_other");
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
             expand.textContent = "More About Me";
         }
     });
+    //the function for showing for more details
     document.querySelector(".more_details").addEventListener("click", () => {
         const more_details2 = document.querySelector(".more_project1");
         const expand2 =  document.querySelector(".more_details");
@@ -25,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function(){
             expand2.textContent = "More Details";
         }
 });
+    //validator for forms
+   
     document.querySelector(".form2").addEventListener("submit", (e) => {
         console.log("Form submitted, but preventDefault should stop it.");
         e.preventDefault();
